@@ -71,7 +71,7 @@
 
       <div class="item">
       <div class="footertext">
-          <p class="foo-logo" style="background-image: url('https://cdn.jsdelivr.net/gh/LIlGG/cdn@1.0.8/img/Sakura/images/sakura.svg');"></p>
+          <p class="foo-logo" style="background-image: url('https://images.chenmx.net/blog/sakura.svg');"></p>
 
           <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="color: #909399;display:flex;justify-content: center;align-content: center;"><span style="line-height:30px;">本站由</span>
               <img src="https://images.chenmx.net/youpaiyun5.png" align="absmiddle" width="59px" height="30px">
