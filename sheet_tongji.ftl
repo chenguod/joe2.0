@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<#assign title=settings.journals_title!'统计'>
 <#import "template/common/header.ftl" as headInfo>
-<@headInfo.head title="${sheet.title}" type="sheet" id=sheet.id />
+<@headInfo.head title="${title}" type="sheet"/>
 <#import "template/macro/tail.ftl" as tailInfo>
+<#include "template/macro/loading.ftl">
 <script src="https://cdn.staticfile.org/echarts/5.1.2/echarts.min.js"></script>
 <body>
 <style>
@@ -47,6 +49,7 @@
         <div class="joe_main">
             <div class="joe_detail">
                 <#include "template/macro/post_status.ftl">
+                <h1 class="joe_detail__title txt-shadow" data-sheetid="${sheet.id}">${sheet.title}</h1>
                 <@post_status status=sheet.status />
                 <div class="sheet-content">
                     <div id="siteTrend" style="width: auto;height: 400px">

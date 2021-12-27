@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<#assign title=settings.journals_title!'休闲'>
 <#import "template/common/header.ftl" as headInfo>
-<@headInfo.head title="${sheet.title}" type="sheet" id=sheet.id />
+<@headInfo.head title="${title}" type="sheet"/>
 <#import "template/macro/tail.ftl" as tailInfo>
+<#include "template/macro/loading.ftl">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 <body>
 <style>
@@ -77,6 +79,7 @@
             <div class="joe_detail">
                 <#include "template/macro/post_status.ftl">
                 <@post_status status=sheet.status />
+                <h1 class="joe_detail__title txt-shadow" data-sheetid="${sheet.id}">${sheet.title}</h1>
                 <div class="sheet-content">
                     <div class="note info">
                         <a style="display:flex;justify-content: left;align-content: center;"><span style="line-height:30px;"></span>
