@@ -94,7 +94,7 @@
                     <#list teams as team>
                       <#if omits?index_of(team.team) == -1>
                         <div class="links-group">
-                          <h1>${team.team!}</h1>
+                          ${team.team!}
                           <@links_item links=team.links />
                         </div>
                       <#else>
